@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Skill Jumpstart Series | BHMT Career Growth</title>
+  <title>Skill Jumpstart | BHMT Career Growth</title>
   <style>
     :root {
       --primary-blue: #003366;
@@ -60,34 +60,56 @@
       line-height: 1.6;
     }
 
-    .course-section {
-      margin-top: 3em;
-    }
-
-    h2 {
-      font-size: 1.4em;
-      border-bottom: 2px solid var(--accent-teal);
-      padding-bottom: 0.3em;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5em;
-      margin-top: 1.5em;
-    }
-
-    .card {
-      background: white;
-      padding: 1.2em;
-      border-left: 5px solid var(--accent-teal);
-      border-radius: 6px;
+    .video-box {
+      max-width: 500px;
+      margin: 1.5em auto;
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      border-radius: 8px;
+      overflow: hidden;
       box-shadow: var(--card-shadow);
     }
 
-    .card h3 {
+    .video-box iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .section {
+      background: white;
+      margin-top: 2.5em;
+      padding: 1.5em;
+      border-left: 6px solid var(--accent-green);
+      border-radius: 8px;
+      box-shadow: var(--card-shadow);
+    }
+
+    .section h2 {
       margin-top: 0;
-      font-size: 1.1em;
+      color: var(--accent-teal);
+    }
+
+    .section p {
+      font-size: 1em;
+      line-height: 1.5;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 1em;
+      background-color: var(--accent-teal);
+      color: white;
+      padding: 10px 16px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background-color: #005b6e;
     }
 
     footer {
@@ -99,8 +121,8 @@
       margin-top: 3em;
     }
 
-    a {
-      color: var(--accent-teal);
+    footer a {
+      color: var(--primary-blue);
       text-decoration: none;
     }
   </style>
@@ -109,36 +131,43 @@
 
   <header>
     <h1>Skill Jumpstart Series</h1>
-    <p>Short, practical courses to help you feel confident in your first 90 days—at any stage in your career.</p>
+    <p>Start strong in your new role with short, targeted learning and real support.</p>
   </header>
 
   <main>
+
     <section class="intro">
       <p>
-        Starting a new job can feel overwhelming — new systems, new people, new expectations. Whether you're switching careers or just landed your first role, this space is for you. These short, mobile-friendly courses are designed to help you build clarity, confidence, and skills that actually matter — fast.
+        Starting a new job? Feeling overwhelmed, unsure what’s expected, or just want to hit the ground running? The Jumpstart Series is designed to build your confidence fast with short, mobile-friendly videos that help you get clear, stay calm, and communicate well — all in your first 90 days.
       </p>
-    </section>
 
-    <section class="course-section">
-      <h2>🎯 Confidence & Communication</h2>
-      <div class="grid">
-        <div class="card"><h3>Succeeding in a New Job</h3></div>
-        <div class="card"><h3>Strategies for Your First 90 Days</h3></div>
-        <div class="card"><h3>Tips for a New Hire Employee</h3></div>
-        <div class="card"><h3>Improving Your Listening Skills</h3></div>
-        <div class="card"><h3>Communicating with Confidence</h3></div>
+      <div class="video-box">
+        <!-- Replace with your actual video URL -->
+        <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
       </div>
     </section>
 
-    <section class="course-section">
-      <h2>🧠 Mindset & Emotional Readiness</h2>
-      <div class="grid">
-        <div class="card"><h3>Letting Go of Overthinking</h3></div>
-        <div class="card"><h3>Managing Your Emotional Response to Workplace Stress</h3></div>
-        <div class="card"><h3>Using Questions to Foster Critical Thinking and Curiosity</h3></div>
-        <div class="card"><h3>Learning to Prioritize and Express Your Needs at Work</h3></div>
-      </div>
+    <section class="section" id="admin-preview">
+      <h2>🗂️ Administrative Support</h2>
+      <p><strong>Pain Point:</strong> “I feel like I need to prove myself, but I’m not sure where to start or who to ask.”</p>
+      <p><strong>How Jumpstart Helps:</strong> These videos show you how to manage expectations, improve communication with your team, and build the confidence to speak up — even if you're brand new.</p>
+      <a href="playlists.html#admin" class="button">View Admin Support Playlist</a>
     </section>
+
+    <section class="section" id="patient-preview">
+      <h2>🩺 Patient Care</h2>
+      <p><strong>Pain Point:</strong> “I want to focus on patients, but everything feels new — the systems, the team, even the pace.”</p>
+      <p><strong>How Jumpstart Helps:</strong> Short, supportive courses on staying calm under pressure, communicating clearly, and handling patient emotions with care.</p>
+      <a href="playlists.html#patient" class="button">View Patient Care Playlist</a>
+    </section>
+
+    <section class="section" id="service-preview">
+      <h2>📞 Customer Service</h2>
+      <p><strong>Pain Point:</strong> “I want to give great service, but it’s hard when people are upset or I don’t have all the answers yet.”</p>
+      <p><strong>How Jumpstart Helps:</strong> Learn how to manage difficult conversations, stay professional under stress, and build trust from day one.</p>
+      <a href="playlists.html#service" class="button">View Customer Service Playlist</a>
+    </section>
+
   </main>
 
   <footer>
