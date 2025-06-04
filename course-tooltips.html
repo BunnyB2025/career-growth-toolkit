@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Course Summary Demo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Course Summary Cards</title>
   <style>
     body {
       font-family: "Segoe UI", sans-serif;
@@ -16,99 +16,77 @@
 
     h1 {
       text-align: center;
-      color: #003366;
     }
 
     section {
       background-color: #ffffff;
       padding: 1.5em;
-      margin-bottom: 2em;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+      margin-bottom: 2em;
     }
 
-    ul {
-      padding-left: 1.5em;
-    }
-
-    li {
-      margin-bottom: 1em;
-      cursor: pointer;
-    }
-
-    .summary {
-      display: none;
-      font-size: 0.95em;
-      color: #333;
-      margin-top: 0.5em;
-      padding-left: 1em;
-    }
-
-    .clickable {
+    .course-title {
+      font-weight: bold;
       color: #007c91;
-      text-decoration: underline;
+      cursor: pointer;
+      margin: 1em 0;
+      display: block;
+    }
+
+    .course-box {
+      display: none;
+      background-color: #ffffff;
+      border: 2px solid #007c91;
+      padding: 1em;
+      border-radius: 8px;
+      margin-top: 0.5em;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
   </style>
 </head>
 <body>
 
-  <h1>Course Summary Display Options</h1>
+  <h1>🟢 Course Summary Demo</h1>
 
   <section>
-    <h2>🔹 Option 1: Hover Tooltip</h2>
-    <p>Hover over each course title to see the summary.</p>
-    <ul>
-      <li title="Learn techniques to stay focused, manage your energy, and reduce distractions.">
-        🟢 <strong>Mindful Productivity</strong>
-      </li>
-      <li title="Develop assertive and confident communication strategies to build credibility.">
-        🟢 <strong>Communicating with Confidence</strong>
-      </li>
-      <li title="Understand how to prioritize, delegate, and organize team projects more efficiently.">
-        🟢 <strong>Time Management for Teams</strong>
-      </li>
-      <li title="Learn the basics of project management, including planning, timelines, and execution.">
-        🟢 <strong>Project Management Simplified</strong>
-      </li>
-      <li title="Reflect on your career direction and build a clear, personalized development plan.">
-        🟢 <strong>Creating Your Personal Development Plan</strong>
-      </li>
-    </ul>
-  </section>
+    <p>Click any course title below to view a brief description inside a square box.</p>
 
-  <section>
-    <h2>🔸 Option 2: Click to Reveal</h2>
-    <p>Click a course title to show or hide the summary.</p>
-    <ul>
-      <li onclick="toggleSummary(0)">
-        <span class="clickable">🟢 Mindful Productivity</span>
-        <div class="summary">Learn techniques to stay focused, manage your energy, and reduce distractions.</div>
-      </li>
-      <li onclick="toggleSummary(1)">
-        <span class="clickable">🟢 Communicating with Confidence</span>
-        <div class="summary">Develop assertive and confident communication strategies to build credibility.</div>
-      </li>
-      <li onclick="toggleSummary(2)">
-        <span class="clickable">🟢 Time Management for Teams</span>
-        <div class="summary">Understand how to prioritize, delegate, and organize team projects more efficiently.</div>
-      </li>
-      <li onclick="toggleSummary(3)">
-        <span class="clickable">🟢 Project Management Simplified</span>
-        <div class="summary">Learn the basics of project management, including planning, timelines, and execution.</div>
-      </li>
-      <li onclick="toggleSummary(4)">
-        <span class="clickable">🟢 Creating Your Personal Development Plan</span>
-        <div class="summary">Reflect on your career direction and build a clear, personalized development plan.</div>
-      </li>
-    </ul>
+    <div>
+      <span class="course-title" onclick="toggleBox('box1')">Mindful Productivity</span>
+      <div id="box1" class="course-box">
+        Learn techniques to stay focused, manage your energy, and reduce distractions.
+      </div>
+
+      <span class="course-title" onclick="toggleBox('box2')">Communicating with Confidence</span>
+      <div id="box2" class="course-box">
+        Develop assertive and confident communication strategies to build credibility.
+      </div>
+
+      <span class="course-title" onclick="toggleBox('box3')">Time Management for Teams</span>
+      <div id="box3" class="course-box">
+        Understand how to prioritize, delegate, and organize team projects more efficiently.
+      </div>
+
+      <span class="course-title" onclick="toggleBox('box4')">Project Management Simplified</span>
+      <div id="box4" class="course-box">
+        Learn the basics of project management, including planning, timelines, and execution.
+      </div>
+
+      <span class="course-title" onclick="toggleBox('box5')">Creating Your Personal Development Plan</span>
+      <div id="box5" class="course-box">
+        Reflect on your career direction and build a clear, personalized development plan.
+      </div>
+    </div>
   </section>
 
   <script>
-    function toggleSummary(index) {
-      const summaries = document.querySelectorAll(".summary");
-      summaries[index].style.display = summaries[index].style.display === "block" ? "none" : "block";
+    function toggleBox(id) {
+      const box = document.getElementById(id);
+      box.style.display = box.style.display === "block" ? "none" : "block";
     }
   </script>
 
 </body>
 </html>
+
