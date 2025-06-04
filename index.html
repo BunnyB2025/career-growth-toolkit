@@ -1,78 +1,126 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Career Growth Toolkit | BHMT</title>
+  <title>Career Growth Resources | BHMT</title>
   <style>
+    :root {
+      --primary-blue: #003366;
+      --accent-teal: #007c91;
+      --accent-gold: #f5a623;
+      --accent-green: #2ecc71;
+      --light-bg: #eef2f5;
+      --card-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
     body {
-      font-family: "Segoe UI", sans-serif;
+      font-family: "Segoe UI", system-ui, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f4f7fa;
-      color: #003366;
+      background-color: var(--light-bg);
+      color: var(--primary-blue);
     }
 
     header {
-      background-color: #003366;
+      background-color: var(--primary-blue);
       color: white;
-      padding: 2em;
+      padding: 2.5em 1em;
       text-align: center;
     }
 
     header h1 {
-      margin: 0 0 10px 0;
-      font-size: 2em;
+      margin: 0;
+      font-size: 2.2em;
     }
 
     header p {
       font-size: 1.1em;
-      max-width: 600px;
-      margin: auto;
+      margin-top: 0.5em;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     main {
-      padding: 2em;
-      max-width: 900px;
+      max-width: 1100px;
       margin: auto;
+      padding: 2em 1em;
     }
 
-    .section-title {
-      font-size: 1.5em;
-      margin-bottom: 0.5em;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.2em;
+    .intro {
+      text-align: center;
     }
 
-    .toolkit-section {
-      background: white;
-      border: 1px solid #ddd;
-      padding: 1.5em;
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      margin-top: 1.5em;
       border-radius: 8px;
-      margin-bottom: 1.5em;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      box-shadow: var(--card-shadow);
     }
 
-    .toolkit-section h2 {
+    .video-container iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .prompt {
+      background-color: white;
+      padding: 1.5em;
+      margin: 3em 0 2em 0;
+      border-left: 6px solid var(--accent-teal);
+      border-radius: 6px;
+      font-size: 1.1em;
+      box-shadow: var(--card-shadow);
+    }
+
+    .framework-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2em;
+    }
+
+    .framework-card {
+      background: white;
+      border-radius: 8px;
+      padding: 1.8em;
+      border-top: 6px solid;
+      box-shadow: var(--card-shadow);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .jumpstart { border-color: var(--accent-teal); }
+    .playlists { border-color: var(--accent-gold); }
+    .toolkit   { border-color: var(--accent-green); }
+
+    .framework-card h2 {
       margin-top: 0;
-      color: #003366;
+      font-size: 1.3em;
     }
 
-    .toolkit-section p {
-      margin: 0.5em 0 1em 0;
+    .framework-card p {
+      font-size: 1em;
+      line-height: 1.5;
+      margin-bottom: 1.5em;
     }
 
-    .toolkit-section a {
-      display: inline-block;
-      background-color: #007c91;
+    .framework-card a {
+      align-self: start;
+      background-color: var(--accent-teal);
       color: white;
       padding: 10px 16px;
       border-radius: 5px;
       text-decoration: none;
-      margin-top: 10px;
+      font-weight: 600;
     }
 
-    .toolkit-section a:hover {
+    .framework-card a:hover {
       background-color: #005b6e;
     }
 
@@ -81,65 +129,65 @@
       font-size: 0.9em;
       padding: 2em;
       color: #555;
+      background-color: #f8f8f8;
+      margin-top: 4em;
     }
 
-    @media screen and (max-width: 600px) {
-      body, main {
-        padding: 1em;
-      }
-
-      header h1 {
-        font-size: 1.5em;
-      }
+    footer a {
+      color: var(--primary-blue);
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Career Growth Toolkit</h1>
-    <p>Support and resources for your first 90 days — at your pace, in your way.</p>
+    <h1>BHMT Career Growth Resources</h1>
+    <p>Explore flexible, inclusive tools to support your first 90 days—and beyond.</p>
   </header>
 
   <main>
-    <div class="toolkit-section">
-      <h2>📝 Quick Self-Assessment</h2>
-      <p>Rate your confidence in communication, time management, technical skills, and collaboration.</p>
-      <a href="self-assessment.html">Explore Self-Assessment</a>
-    </div>
 
-    <div class="toolkit-section">
-      <h2>💬 Conversations with Your Manager</h2>
-      <p>Use this 5-question guide to build connection, get feedback, and set clear expectations in your new role.</p>
-      <a href="manager-conversations.html">View Manager Guide</a>
-    </div>
+    <section class="intro">
+      <p>This site provides new hires with self-guided tools to upskill, reflect, and gain confidence—at your pace, in your way.</p>
+      <div class="video-container">
+        <!-- Replace this YouTube URL with your actual welcome video link -->
+        <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
 
-    <div class="toolkit-section">
-      <h2>🪞 Strengths & Blind Spots</h2>
-      <p>Take 10 minutes to reflect on where you shine—and where you need support.</p>
-      <a href="strengths-reflection.html">Start Reflection</a>
-    </div>
+    <section class="prompt">
+      <p><strong>Feeling stuck? Unsure where to focus first?</strong><br />
+      Choose a resource that fits your goals — and get started with support built just for you.</p>
+    </section>
 
-    <div class="toolkit-section">
-      <h2>🎯 Skill-Based Course Suggestions</h2>
-      <p>Explore curated LinkedIn Learning videos aligned with your goals and assessment results.</p>
-      <a href="skill-courses.html">See Course List</a>
-    </div>
+    <section class="framework-grid">
 
-    <div class="toolkit-section">
-      <h2>✨ Inspiration by Generation</h2>
-      <p>Quotes to encourage your growth — no matter your background, age, or experience.</p>
-      <a href="inspiration.html">View Quotes</a>
-    </div>
+      <div class="framework-card jumpstart">
+        <h2>🟦 Skill Jumpstart Series</h2>
+        <p>Short, practical courses to help you feel confident in your first 90 days—whether you’re just starting or shifting roles.</p>
+        <a href="jumpstart.html">Explore Jumpstart</a>
+      </div>
 
-    <div class="toolkit-section">
-      <h2>📩 Share Feedback</h2>
-      <p>Let us know what’s working — or what else you’d like to see in the toolkit.</p>
-      <a href="feedback.html">Give Feedback</a>
-    </div>
+      <div class="framework-card playlists">
+        <h2>🟧 Role-Based Learning Playlists</h2>
+        <p>Focused, curated videos to build essential skills for your specific job role or department.</p>
+        <a href="playlists.html">View Playlists</a>
+      </div>
+
+      <div class="framework-card toolkit">
+        <h2>🟩 Career Growth Toolkit</h2>
+        <p>Self-reflection exercises, assessments, and courses to help you set goals and grow confidently.</p>
+        <a href="index.html">Open Toolkit</a>
+      </div>
+
+    </section>
+
   </main>
 
   <footer>
     &copy; 2025 Ben Hudnall Memorial Trust | <a href="https://www.bhmt.org" target="_blank">Visit BHMT.org</a>
   </footer>
+
 </body>
 </html>
