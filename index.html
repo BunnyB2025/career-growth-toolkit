@@ -1,31 +1,145 @@
-"add homepage"
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Career Growth Toolkit</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Career Growth Toolkit | BHMT</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 2em; background: #f4f7fa; }
-    h1 { color: #2c3e50; }
-    ul { list-style: none; padding: 0; }
-    li { margin: 10px 0; }
-    a {
-      background: #3498db; color: white; padding: 10px 15px;
-      text-decoration: none; border-radius: 5px; display: inline-block;
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f7fa;
+      color: #003366;
     }
-    a:hover { background: #2980b9; }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 2em;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 10px 0;
+      font-size: 2em;
+    }
+
+    header p {
+      font-size: 1.1em;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    main {
+      padding: 2em;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 1.5em;
+      margin-bottom: 0.5em;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.2em;
+    }
+
+    .toolkit-section {
+      background: white;
+      border: 1px solid #ddd;
+      padding: 1.5em;
+      border-radius: 8px;
+      margin-bottom: 1.5em;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .toolkit-section h2 {
+      margin-top: 0;
+      color: #003366;
+    }
+
+    .toolkit-section p {
+      margin: 0.5em 0 1em 0;
+    }
+
+    .toolkit-section a {
+      display: inline-block;
+      background-color: #007c91;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    .toolkit-section a:hover {
+      background-color: #005b6e;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      padding: 2em;
+      color: #555;
+    }
+
+    @media screen and (max-width: 600px) {
+      body, main {
+        padding: 1em;
+      }
+
+      header h1 {
+        font-size: 1.5em;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>Welcome to Your Career Growth Toolkit</h1>
-  <p>This space is designed to support you in your first 90 days. Select a section below to begin:</p>
-  <ul>
-    <li><a href="self-assessment.html">📝 Self-Assessment</a></li>
-    <li><a href="manager-conversations.html">💬 Conversations with Your Manager</a></li>
-    <li><a href="strengths-reflection.html">🪞 Strengths & Blind Spots</a></li>
-    <li><a href="skill-courses.html">🎯 Skill-Based Course Suggestions</a></li>
-    <li><a href="inspiration.html">✨ Inspirational Quotes</a></li>
-    <li><a href="feedback.html">📩 Feedback & Contact</a></li>
-  </ul>
+  <header>
+    <h1>Career Growth Toolkit</h1>
+    <p>Support and resources for your first 90 days — at your pace, in your way.</p>
+  </header>
+
+  <main>
+    <div class="toolkit-section">
+      <h2>📝 Quick Self-Assessment</h2>
+      <p>Rate your confidence in communication, time management, technical skills, and collaboration.</p>
+      <a href="self-assessment.html">Explore Self-Assessment</a>
+    </div>
+
+    <div class="toolkit-section">
+      <h2>💬 Conversations with Your Manager</h2>
+      <p>Use this 5-question guide to build connection, get feedback, and set clear expectations in your new role.</p>
+      <a href="manager-conversations.html">View Manager Guide</a>
+    </div>
+
+    <div class="toolkit-section">
+      <h2>🪞 Strengths & Blind Spots</h2>
+      <p>Take 10 minutes to reflect on where you shine—and where you need support.</p>
+      <a href="strengths-reflection.html">Start Reflection</a>
+    </div>
+
+    <div class="toolkit-section">
+      <h2>🎯 Skill-Based Course Suggestions</h2>
+      <p>Explore curated LinkedIn Learning videos aligned with your goals and assessment results.</p>
+      <a href="skill-courses.html">See Course List</a>
+    </div>
+
+    <div class="toolkit-section">
+      <h2>✨ Inspiration by Generation</h2>
+      <p>Quotes to encourage your growth — no matter your background, age, or experience.</p>
+      <a href="inspiration.html">View Quotes</a>
+    </div>
+
+    <div class="toolkit-section">
+      <h2>📩 Share Feedback</h2>
+      <p>Let us know what’s working — or what else you’d like to see in the toolkit.</p>
+      <a href="feedback.html">Give Feedback</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Ben Hudnall Memorial Trust | <a href="https://www.bhmt.org" target="_blank">Visit BHMT.org</a>
+  </footer>
 </body>
 </html>
