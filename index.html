@@ -1,9 +1,203 @@
-<section class="intro">
-  <p><strong>Welcome to the BHMT Career Growth Hub.</strong><br />
-  Whether you’re new to your role, switching paths, or just want a boost — this space helps you build confidence, fast. Learn what you need, when you need it, and on your own terms.</p>
-  
-  <div class="video-container" style="padding-bottom: 40%; max-width: 700px; margin: 1.5em auto;">
-    <!-- Replace this YouTube URL with your actual welcome video link -->
-    <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Career Growth Resources | BHMT</title>
+  <style>
+    :root {
+      --primary-blue: #003366;
+      --accent-teal: #007c91;
+      --accent-gold: #f5a623;
+      --accent-green: #6dbf55; /* Updated BHMT green */
+      --light-bg: #eef2f5;
+      --card-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    body {
+      font-family: "Segoe UI", system-ui, sans-serif;
+      margin: 0;
+      background-color: var(--light-bg);
+      color: var(--primary-blue);
+    }
+
+    header {
+      background-color: var(--primary-blue);
+      color: white;
+      padding: 2.5em 1em;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2em;
+    }
+
+    header p {
+      font-size: 1.1em;
+      margin-top: 0.5em;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2em 1em;
+    }
+
+    .intro {
+      text-align: center;
+    }
+
+    .intro p {
+      font-size: 1.1em;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 40%; /* Smaller height */
+      height: 0;
+      overflow: hidden;
+      margin: 1.5em auto;
+      border-radius: 8px;
+      box-shadow: var(--card-shadow);
+      max-width: 700px;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .prompt {
+      background-color: white;
+      padding: 1.5em;
+      margin: 3em 0 2em 0;
+      border-left: 6px solid var(--accent-teal);
+      border-radius: 6px;
+      font-size: 1.1em;
+      box-shadow: var(--card-shadow);
+    }
+
+    .framework-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2em;
+    }
+
+    .framework-card {
+      background: white;
+      border-radius: 8px;
+      padding: 1.8em;
+      border-top: 6px solid;
+      box-shadow: var(--card-shadow);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .jumpstart { border-color: var(--accent-teal); }
+    .playlists { border-color: var(--accent-gold); }
+    .toolkit   { border-color: var(--accent-green); }
+
+    .framework-card h2 {
+      margin-top: 0;
+      font-size: 1.3em;
+    }
+
+    .framework-card p {
+      font-size: 1em;
+      line-height: 1.5;
+      margin-bottom: 1.5em;
+    }
+
+    .framework-card a {
+      align-self: start;
+      background-color: var(--accent-teal);
+      color: white;
+      padding: 10px 16px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .framework-card a:hover {
+      background-color: #005b6e;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      padding: 2em;
+      color: #555;
+      background-color: #f8f8f8;
+      margin-top: 4em;
+    }
+
+    footer a {
+      color: var(--primary-blue);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>BHMT Career Growth Resources</h1>
+    <p>Explore flexible, inclusive tools to support your first 90 days—and beyond.</p>
+  </header>
+
+  <main>
+
+    <section class="intro">
+      <p><strong>Welcome to the BHMT Career Growth Hub.</strong><br />
+      Whether you’re new to your role, switching paths, or just want a boost — this space helps you build confidence, fast. Learn what you need, when you need it, and on your own terms.</p>
+      
+      <div class="video-container">
+        <!-- Replace this YouTube URL with your actual welcome video link -->
+        <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section class="prompt">
+      <p><strong>Feeling stuck? Unsure where to focus first?</strong><br />
+      Choose a resource that fits your goals — and get started with support built just for you.</p>
+    </section>
+
+    <section class="framework-grid">
+
+      <div class="framework-card jumpstart">
+        <h2>🟦 Skill Jumpstart Series</h2>
+        <p>Short, practical courses to help you feel confident in your first 90 days—whether you’re just starting or shifting roles.</p>
+        <a href="jumpstart.html">Explore Jumpstart</a>
+      </div>
+
+      <div class="framework-card playlists">
+        <h2>🟧 Role-Based Learning Playlists</h2>
+        <p>Focused, curated videos to build essential skills for your specific job role or department.</p>
+        <a href="playlists.html">View Playlists</a>
+      </div>
+
+      <div class="framework-card toolkit">
+        <h2>🟩 Career Growth Toolkit</h2>
+        <p>Self-reflection exercises, assessments, and courses to help you set goals and grow confidently.</p>
+        <a href="index.html">Open Toolkit</a>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2025 Ben Hudnall Memorial Trust | <a href="https://www.bhmt.org" target="_blank">Visit BHMT.org</a>
+  </footer>
+
+</body>
+</html>
