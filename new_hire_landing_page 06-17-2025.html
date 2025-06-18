@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launch Your New Role with Confidence - BHMT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Section */
+        .header {
+            background: white;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .video-placeholder {
+            width: 100%;
+            max-width: 800px;
+            height: 300px;
+            background: #e9ecef;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 30px auto;
+            color: #6c757d;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .hero-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #212529;
+            margin-bottom: 20px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: #6c757d;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .intro-text {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 30px auto;
+            max-width: 800px;
+            border-left: 4px solid #5c4b8a;
+        }
+
+        .intro-text h3 {
+            color: #212529;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .intro-text p {
+            color: #495057;
+        }
+
+        /* Path Selection Cards - BHMT Style */
+        .path-selection {
+            margin: 60px 0;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .path-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .path-card {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            border: 2px solid #dee2e6;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .path-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .path-card.foundation {
+            border-left: 6px solid #5c4b8a;
+        }
+
+        .path-card.foundation .path-icon {
+            background: #5c4b8a;
+        }
+
+        .path-card.connect {
+            border-left: 6px solid #fd7e14;
+        }
+
+        .path-card.connect .path-icon {
+            background: #fd7e14;
+        }
+
+        .path-card.excel {
+            border-left: 6px solid #5c4b8a;
+        }
+
+        .path-card.excel .path-icon {
+            background: #5c4b8a;
+        }
+
+        .path-icon {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .path-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #212529;
+            margin-bottom: 10px;
+        }
+
+        .path-subtitle {
+            font-style: italic;
+            color: #6c757d;
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        .path-description {
+            color: #495057;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .course-list {
+            list-style: none;
+            margin: 20px 0;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 6px;
+        }
+
+        .course-list li {
+            padding: 5px 0;
+            color: #495057;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .course-list li:before {
+            content: "•";
+            color: #5c4b8a;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .cta-button {
+            background: #5c4b8a;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            background: #4a3d73;
+            transform: translateY(-2px);
+        }
+
+        /* Navigation Tabs - Clean BHMT Style */
+        .nav-tabs {
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            flex-wrap: wrap;
+        }
+
+        .nav-tab {
+            padding: 15px 25px;
+            border: none;
+            background: transparent;
+            color: #495057;
+            font-weight: 500;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 5px;
+            font-size: 1rem;
+        }
+
+        .nav-tab.active {
+            background: #5c4b8a;
+            color: white;
+        }
+
+        .nav-tab:hover:not(.active) {
+            background: #e9ecef;
+        }
+
+        /* Content Sections */
+        .content-section {
+            display: none;
+            background: white;
+            border-radius: 8px;
+            padding: 40px;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #212529;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: #6c757d;
+            text-align: center;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+
+        .section-intro {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            text-align: center;
+            border-left: 4px solid #5c4b8a;
+        }
+
+        .section-intro p {
+            color: #495057;
+            margin-bottom: 15px;
+        }
+
+        .section-intro .highlight {
+            font-weight: 600;
+            color: #212529;
+            font-size: 1.1rem;
+        }
+
+        /* Course Grid */
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .course-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 25px;
+            border: 1px solid #dee2e6;
+            transition: all 0.3s ease;
+        }
+
+        .course-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-color: #5c4b8a;
+        }
+
+        .course-emoji {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .course-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #212529;
+            margin-bottom: 10px;
+        }
+
+        .course-tagline {
+            font-style: italic;
+            color: #6c757d;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+        .course-description {
+            color: #495057;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .course-perfect {
+            font-weight: 500;
+            color: #495057;
+            font-size: 0.9rem;
+        }
+
+        /* Playlist Section */
+        .playlist-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .playlist-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 30px;
+            border: 1px solid #dee2e6;
+            transition: all 0.3s ease;
+        }
+
+        .playlist-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .playlist-card.coming-soon {
+            opacity: 0.7;
+            border-style: dashed;
+        }
+
+        .playlist-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .playlist-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #212529;
+            margin-bottom: 10px;
+        }
+
+        .playlist-subtitle {
+            font-style: italic;
+            color: #6c757d;
+            margin-bottom: 15px;
+        }
+
+        .playlist-description {
+            color: #495057;
+            margin-bottom: 20px;
+        }
+
+        .course-highlights {
+            background: white;
+            padding: 20px;
+            border-radius: 6px;
+            margin: 20px 0;
+            border: 1px solid #e9ecef;
+        }
+
+        .course-highlights h4 {
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #212529;
+        }
+
+        .course-highlights ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .course-highlights li {
+            padding: 5px 0;
+            color: #495057;
+        }
+
+        /* Success Stories Section */
+        .success-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .success-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #5c4b8a;
+        }
+
+        .success-card.growth { border-left-color: #5c4b8a; }
+        .success-card.confidence { border-left-color: #7c6ba0; }
+        .success-card.advancement { border-left-color: #9d8ac7; }
+        .success-card.connection { border-left-color: #fd7e14; }
+
+        .success-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #212529;
+            margin-bottom: 10px;
+        }
+
+        .success-description {
+            color: #495057;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .success-outcome {
+            font-weight: 500;
+            color: #5c4b8a;
+            font-size: 0.9rem;
+        }
+
+        /* Benefits Section */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #e9ecef;
+            transition: all 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .benefit-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #5c4b8a;
+        }
+
+        .benefit-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #212529;
+            margin-bottom: 15px;
+        }
+
+        .benefit-description {
+            color: #495057;
+            line-height: 1.5;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px;
+            background: white;
+            border-radius: 8px;
+            margin: 40px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .footer-message {
+            font-size: 1.1rem;
+            color: #495057;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .footer-tagline {
+            font-weight: 600;
+            color: #212529;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .path-cards {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-tabs {
+                flex-direction: column;
+            }
+            
+            .playlist-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+
+            .header, .path-selection, .content-section, .footer {
+                padding: 30px 20px;
+            }
+        }
+
+        /* BHMT Brand Colors */
+        :root {
+            --bhmt-primary: #5c4b8a;
+            --bhmt-secondary: #7c6ba0;
+            --bhmt-accent: #fd7e14;
+            --bhmt-gray: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <div class="video-placeholder">
+                📹 Welcome Video Goes Here
+            </div>
+            <h1 class="hero-title">Launch Your New Role with Confidence</h1>
+            <p class="hero-subtitle">You're starting an exciting new chapter! While every workplace has its learning curve, these resources are designed to accelerate your success and help you thrive from day one. Choose the path that best matches your goals and learning style.</p>
+            
+            <div class="intro-text">
+                <h3>Ready to turn new role excitement into sustained success?</h3>
+                <p>Every successful professional knows that the first 90 days set the tone for everything that follows. These three learning paths are designed to help you build confidence, make meaningful connections, and position yourself for growth—turning the natural questions that come with any new role into strategic advantages.</p>
+            </div>
+        </div>
+
+        <!-- Path Selection -->
+        <div class="path-selection">
+            <div class="path-cards">
+                <div class="path-card foundation" onclick="showSection('foundation')">
+                    <div class="path-icon">🟩</div>
+                    <h3 class="path-title">Build Your Foundation</h3>
+                    <p class="path-subtitle">Master the essentials while navigating your first 90 days</p>
+                    <p class="path-description"><strong>Perfect if you want to:</strong> Transform the natural uncertainty of starting fresh into confident expertise. Establish strong work habits, develop emotional intelligence, and build the core skills that lead to long-term success.</p>
+                    <ul class="course-list">
+                        <li>Succeeding in a New Job</li>
+                        <li>Managing Stress for Positive Change</li>
+                        <li>Managing Your Emotions at Work</li>
+                        <li>Building Resilience</li>
+                        <li>Strategic Decision Making</li>
+                    </ul>
+                    <p><strong>Ideal for:</strong> New professionals, career changers, and anyone wanting to establish strong workplace fundamentals while navigating early-role dynamics.</p>
+                    <p><strong>Time Investment:</strong> Each course is under 45 minutes, designed for busy schedules and immediate application.</p>
+                    <button class="cta-button">Start Building →</button>
+                </div>
+
+                <div class="path-card connect" onclick="showSection('connect')">
+                    <div class="path-icon">🟧</div>
+                    <h3 class="path-title">Connect & Thrive</h3>
+                    <p class="path-subtitle">Turn workplace relationships into career accelerators</p>
+                    <p class="path-description"><strong>Perfect if you want to:</strong> Navigate office dynamics successfully while building authentic professional relationships. Every workplace has its culture—these skills help you read it, adapt to it, and thrive within it.</p>
+                    <ul class="course-list">
+                        <li>Communicating with Confidence</li>
+                        <li>Improving Your Listening Skills</li>
+                        <li>Setting Up Your LinkedIn Profile</li>
+                        <li>Managing Your Emotions at Work</li>
+                        <li>Staying Focused in a Distracted World</li>
+                    </ul>
+                    <p><strong>Ideal for:</strong> Anyone wanting to decode workplace dynamics, strengthen communication skills, and build relationships that support career growth.</p>
+                    <p><strong>Time Investment:</strong> Flexible learning modules that address real workplace scenarios and provide immediate practical value.</p>
+                    <button class="cta-button">Start Connecting →</button>
+                </div>
+
+                <div class="path-card excel" onclick="showSection('excel')">
+                    <div class="path-icon">🟦</div>
+                    <h3 class="path-title">Excel & Lead</h3>
+                    <p class="path-subtitle">Advanced skills for standout performance and leadership</p>
+                    <p class="path-description"><strong>Perfect if you want to:</strong> Distinguish yourself as a high performer, develop leadership qualities, and position yourself for rapid career advancement.</p>
+                    <ul class="course-list">
+                        <li>Communicating with Confidence</li>
+                        <li>Building Resilience</li>
+                        <li>Managing Stress for Positive Change</li>
+                        <li>Staying Focused in a Distracted World</li>
+                        <li>Setting Up Your LinkedIn Profile</li>
+                    </ul>
+                    <p><strong>Ideal for:</strong> Ambitious professionals ready to accelerate their growth and anyone preparing for leadership opportunities.</p>
+                    <p><strong>Time Investment:</strong> Strategic skill development through focused courses that deliver maximum impact on your professional trajectory.</p>
+                    <button class="cta-button">Start Excelling →</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <div class="nav-tabs">
+            <button class="nav-tab active" onclick="showSection('jumpstart')">🟦 Success Accelerators</button>
+            <button class="nav-tab" onclick="showSection('playlists')">🟧 Targeted Learning Paths</button>
+            <button class="nav-tab" onclick="showSection('toolkit')">🟩 Growth Resources</button>
+        </div>
+
+        <!-- Success Accelerators Section -->
+        <div id="jumpstart" class="content-section active">
+            <h2 class="section-title">Success Accelerators</h2>
+            <p class="section-subtitle">Power-packed courses designed for immediate impact</p>
+            
+            <div class="section-intro">
+                <p>Starting a new job brings natural questions and a learning curve—that's completely normal and actually an advantage. These focused courses (all under 45 minutes) are designed to turn those early uncertainties into competitive strengths that create immediate positive impact.</p>
+                <p class="highlight">Practical expertise delivered efficiently. Real skills that address actual workplace realities. Confidence that builds through proven capability.</p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3 class="benefit-title">Immediate Impact</h3>
+                    <p class="benefit-description">Skills you can apply right away to make a positive impression and add value from your first week.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <h3 class="benefit-title">Focused Learning</h3>
+                    <p class="benefit-description">No fluff or filler - just essential skills presented clearly and efficiently for busy professionals.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📱</div>
+                    <h3 class="benefit-title">Flexible Access</h3>
+                    <p class="benefit-description">Learn during commutes, lunch breaks, or whenever works best for your schedule and learning style.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🚀</div>
+                    <h3 class="benefit-title">Career Acceleration</h3>
+                    <p class="benefit-description">Build the professional skills that set you apart and position you for rapid growth and advancement.</p>
+                </div>
+            </div>
+
+            <div class="course-grid">
+                <div class="course-card">
+                    <div class="course-emoji">🚀</div>
+                    <h3 class="course-name">Succeeding in a New Job</h3>
+                    <p class="course-tagline">Navigate the unwritten rules and establish your professional presence</p>
+                    <p class="course-description">Every workplace has its unique culture and expectations. Learn to decode these quickly, understand what success looks like in your specific environment, and establish yourself as a valuable team member from day one.</p>
+                    <p class="course-perfect"><strong>You'll gain:</strong> Workplace navigation skills, cultural awareness, and confidence to thrive in any professional environment.</p>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-emoji">💬</div>
+                    <h3 class="course-name">Communicating with Confidence</h3>
+                    <p class="course-tagline">Master the art of professional communication</p>
+                    <p class="course-description">Develop clear, persuasive communication skills that help you express ideas effectively, participate confidently in meetings, and build strong professional relationships.</p>
+                    <p class="course-perfect"><strong>You'll gain:</strong> Presentation skills, meeting participation confidence, and the ability to articulate ideas clearly.</p>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-emoji">🧠</div>
+                    <h3 class="course-name">Strategic Decision Making</h3>
+                    <p class="course-tagline">Move from overthinking to confident action</p>
+                    <p class="course-description">Learn to make sound decisions efficiently, trust your professional judgment, and take decisive action that moves projects and goals forward.</p>
+                    <p class="course-perfect"><strong>You'll gain:</strong> Decision-making frameworks, confidence in your judgment, and the ability to act decisively.</p>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-emoji">💪</div>
+                    <h3 class="course-name">Building Professional Resilience</h3>
+                    <p class="course-tagline">Develop the mental strength for sustained success</p>
+                    <p class="course-description">Build the resilience needed to handle workplace challenges, recover quickly from setbacks, and maintain peak performance under pressure.</p>
+                    <p class="course-perfect"><strong>You'll gain:</strong> Stress management skills, recovery strategies, and the mental toughness that drives long-term success.</p>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-emoji">🎯</div>
+                    <h3 class="course-name">Optimizing Your Energy</h3>
+                    <p class="course-tagline">Channel workplace pressures into sustainable high performance</p>
+                    <p class="course-description">New roles naturally come with intensity and pressure. Learn to channel this energy positively, maintain peak performance during demanding periods, and create sustainable work habits that prevent burnout while driving success.</p>
+                    <p class="course-perfect"><strong>You'll gain:</strong> Energy management techniques, pressure optimization strategies, and sustainable performance systems.</p>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-emoji">🔍</div>
+                    <h3 class="course-name">Mastering Professional Focus</h3>
+                    <p class="course-tagline">Excel in our distraction-rich work environment</p>
+                    <p class="course-description">Develop laser-sharp focus skills that help you prioritize effectively, manage multiple demands, and deliver exceptional results consistently.</p>
+                    <p class="course-perfect"><strong>You'll gain:</strong> Priority management, focus techniques, and productivity systems that drive results.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Targeted Learning Paths Section -->
+        <div id="playlists" class="content-section">
+            <h2 class="section-title">Targeted Learning Paths</h2>
+            <p class="section-subtitle">Role-specific skill development for maximum relevance</p>
+            
+            <div class="section-intro">
+                <p>Generic training often misses the mark because every role has specific demands and expectations. These curated paths acknowledge that reality and focus on the exact skills you need to excel in your particular position and industry.</p>
+                <p class="highlight">Targeted learning that addresses real workplace challenges while accelerating your professional growth and career advancement.</p>
+            </div>
+
+            <div class="playlist-grid">
+                <div class="playlist-card">
+                    <div class="playlist-icon">🗂️</div>
+                    <h3 class="playlist-title">Administrative Excellence Pathway</h3>
+                    <p class="playlist-subtitle">Master the skills that make organizations run smoothly</p>
+                    <p class="playlist-description"><strong>Designed for:</strong> Administrative professionals, coordinators, and support specialists who are the backbone of organizational success.</p>
+                    
+                    <div class="course-highlights">
+                        <h4>Your Success Toolkit:</h4>
+                        <ul>
+                            <li>📧 <strong>Advanced Outlook Mastery</strong> - Become the productivity expert everyone relies on</li>
+                            <li>🛠️ <strong>Microsoft 365 Power User Skills</strong> - Choose the perfect tool for every task</li>
+                            <li>📝 <strong>Digital Organization Systems</strong> - OneNote strategies for flawless information management</li>
+                            <li>✍️ <strong>Professional Writing Excellence</strong> - Clear communication that gets results</li>
+                            <li>💼 <strong>Executive Support Mastery</strong> - Advanced skills for career advancement</li>
+                            <li>💝 <strong>Relationship Building Through Communication</strong> - Create positive workplace connections</li>
+                        </ul>
+                    </div>
+                    <button class="cta-button">Launch Your Pathway →</button>
+                </div>
+
+                <div class="playlist-card">
+                    <div class="playlist-icon">🏥</div>
+                    <h3 class="playlist-title">Healthcare & Technical Professional Pathway</h3>
+                    <p class="playlist-subtitle">Excel in high-stakes, people-centered technical roles</p>
+                    <p class="playlist-description"><strong>Designed for:</strong> Healthcare professionals, lab technicians, and technical specialists who combine expertise with human interaction.</p>
+                    
+                    <div class="course-highlights">
+                        <h4>Your Success Toolkit:</h4>
+                        <ul>
+                            <li>🔄 <strong>Adaptability and Change Leadership</strong> - Thrive in dynamic environments</li>
+                            <li>🧘 <strong>Professional Emotional Intelligence</strong> - Excel under pressure while maintaining compassion</li>
+                            <li>🗣️ <strong>Expert Communication Skills</strong> - Convey complex information clearly and compassionately</li>
+                            <li>💪 <strong>Resilience for High-Stakes Work</strong> - Maintain peak performance in critical situations</li>
+                            <li>🎯 <strong>Mindful Professional Practice</strong> - Stay present and focused in demanding roles</li>
+                            <li>⚡ <strong>Essential Documentation Skills</strong> - Master the tools that support quality care</li>
+                        </ul>
+                    </div>
+                    <button class="cta-button">Launch Your Pathway →</button>
+                </div>
+
+                <div class="playlist-card">
+                    <div class="playlist-icon">💼</div>
+                    <h3 class="playlist-title">Professional Services Leadership Pathway</h3>
+                    <p class="playlist-subtitle">Develop client-focused expertise and leadership skills</p>
+                    <p class="playlist-description"><strong>Designed for:</strong> Consultants, analysts, project managers, and client-facing professionals ready to advance their careers.</p>
+                    
+                    <div class="course-highlights">
+                        <h4>Your Success Toolkit:</h4>
+                        <ul>
+                            <li>🎯 <strong>Strategic Client Communication</strong> - Build lasting professional relationships</li>
+                            <li>📊 <strong>Advanced Project Leadership</strong> - Drive results and exceed expectations</li>
+                            <li>🧠 <strong>Analytical Problem-Solving</strong> - Become the expert clients trust</li>
+                            <li>💡 <strong>Innovation and Solutions Thinking</strong> - Develop cutting-edge approaches to complex challenges</li>
+                            <li>🤝 <strong>Stakeholder Influence and Negotiation</strong> - Master the art of professional persuasion</li>
+                            <li>📈 <strong>Business Development Skills</strong> - Grow your practice and advance your career</li>
+                        </ul>
+                    </div>
+                    <button class="cta-button">Coming Soon - Join Waitlist →</button>
+                </div>
+            </div>
+
+            <div class="section-intro" style="margin-top: 40px;">
+                <h4>Maximize Your Learning Impact</h4>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; text-align: left; margin-top: 20px;">
+                    <div>
+                        <p><strong>🎯 Start Strategic:</strong> Choose courses that align with your immediate goals and upcoming projects.</p>
+                    </div>
+                    <div>
+                        <p><strong>📱 Learn Flexibly:</strong> Access courses on any device and learn at your optimal pace and schedule.</p>
+                    </div>
+                    <div>
+                        <p><strong>🔄 Revisit Regularly:</strong> Return to courses as your role evolves and new challenges emerge.</p>
+                    </div>
+                    <div>
+                        <p><strong>💡 Apply Immediately:</strong> Implement new techniques right away to reinforce learning and see results.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Growth Resources Section -->
+        <div id="toolkit" class="content-section">
+            <h2 class="section-title">Growth Resources</h2>
+            <p class="section-subtitle">Your comprehensive guide to professional acceleration and success</p>
+            
+            <div class="section-intro">
+                <h3 style="margin-bottom: 15px;">Welcome to Your Professional Growth Journey</h3>
+                <p>Starting a new job brings a mix of excitement and natural questions—both are completely normal and actually signs of engagement. This is your moment to establish strong foundations, build valuable relationships, and position yourself for accelerated career growth.</p>
+                <p class="highlight">You have the capability to succeed. These resources help you navigate the learning curve while accelerating your path to expertise.</p>
+            </div>
+
+            <div class="success-grid">
+                <div class="success-card growth">
+                    <h4 class="success-title">🎯 The Strategic Starter</h4>
+                    <p class="success-description">You're focused on making smart moves from day one while navigating the natural learning curve that comes with any new role.</p>
+                    <p class="success-outcome"><strong>Your path:</strong> Start with Success Accelerators to address immediate questions, then explore targeted learning paths for sustained growth.</p>
+                </div>
+
+                <div class="success-card confidence">
+                    <h4 class="success-title">📈 The Growth-Minded Professional</h4>
+                    <p class="success-description">You're performing well and ready to take your skills to the next level with strategic development.</p>
+                    <p class="success-outcome"><strong>Your path:</strong> Dive deep into role-specific learning paths to gain expertise that sets you apart in your field.</p>
+                </div>
+
+                <div class="success-card advancement">
+                    <h4 class="success-title">🔄 The Career Pivot Professional</h4>
+                    <p class="success-description">You're bringing valuable experience to a new industry or role and want to accelerate your adaptation while leveraging what you already know.</p>
+                    <p class="success-outcome"><strong>Your path:</strong> Combine Success Accelerators with targeted learning to bridge the gap between your experience and new context.</p>
+                </div>
+
+                <div class="success-card connection">
+                    <h4 class="success-title">🚀 The High-Potential Leader</h4>
+                    <p class="success-description">You're ambitious and ready to distinguish yourself as someone with exceptional potential and leadership qualities.</p>
+                    <p class="success-outcome"><strong>Your path:</strong> Take advantage of all resources to build comprehensive skills that accelerate your path to leadership.</p>
+                </div>
+            </div>
+
+            <div class="benefits-grid" style="margin-top: 40px;">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌟</div>
+                    <h3 class="benefit-title">Excellence is Your Standard</h3>
+                    <p class="benefit-description">You don't just want to do well—you want to excel. These resources help you exceed expectations and stand out for all the right reasons.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🤝</div>
+                    <h3 class="benefit-title">Relationships Drive Success</h3>
+                    <p class="benefit-description">Strong professional relationships accelerate every aspect of your career. Learn to build connections that support your growth and success.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📚</div>
+                    <h3 class="benefit-title">Continuous Learning Advantage</h3>
+                    <p class="benefit-description">The professionals who advance fastest are those who never stop learning. Make continuous development a cornerstone of your career strategy.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3 class="benefit-title">Rapid Impact Capability</h3>
+                    <p class="benefit-description">You have the opportunity to make immediate positive impact. These resources help you recognize and capitalize on that potential.</p>
+                </div>
+            </div>
+
+            <div style="background: #fff3cd; border: 2px solid #ffeaa7; border-radius: 8px; padding: 30px; margin: 40px 0; text-align: center;">
+                <h4 style="color: #333; margin-bottom: 20px; font-size: 1.3rem;">Your Success Mindset</h4>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; text-align: left; margin-top: 20px;">
+                    <div>
+                        <h5 style="font-weight: 600; color: #333; margin-bottom: 5px;">Growth is Your Default</h5>
+                        <p style="color: #555; font-size: 0.9rem;">Every experience is an opportunity to develop new skills and capabilities.</p>
+                    </div>
+                    <div>
+                        <h5 style="font-weight: 600; color: #333; margin-bottom: 5px;">Questions Show Engagement</h5>
+                        <p style="color: #555; font-size: 0.9rem;">Asking thoughtful questions demonstrates engagement and accelerates your understanding of your new environment.</p>
+                    </div>
+                    <div>
+                        <h5 style="font-weight: 600; color: #333; margin-bottom: 5px;">Progress Compounds</h5>
+                        <p style="color: #555; font-size: 0.9rem;">Small, consistent improvements create remarkable results over time.</p>
+                    </div>
+                    <div>
+                        <h5 style="font-weight: 600; color: #333; margin-bottom: 5px;">You Belong Here</h5>
+                        <p style="color: #555; font-size: 0.9rem;">You were chosen for this role because you have the capability to excel in it.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background: #f8f9fa; padding: 30px; border-radius: 8px; margin-top: 40px; border-left: 4px solid #5c4b8a;">
+                <h4 style="color: #5c4b8a; margin-bottom: 20px;">Why This Approach Works Across Experience Levels</h4>
+                <ul style="margin: 10px 0; padding-left: 20px; color: #495057;">
+                    <li><strong>Acknowledges Reality:</strong> Every new role has a learning curve—these resources help you navigate it strategically rather than just hoping for the best.</li>
+                    <li><strong>Builds on Strengths:</strong> Whether you're new to the workforce or bringing years of experience, these tools help you leverage what you know while filling knowledge gaps.</li>
+                    <li><strong>Practical Application:</strong> Learn skills you can implement immediately to see tangible results in your daily work, building confidence through proven capability.</li>
+                    <li><strong>Sustainable Growth:</strong> Skills build on each other systematically, creating lasting improvement rather than quick fixes.</li>
+                </ul>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <h3 style="color: #212529; margin-bottom: 20px;">Ready to Accelerate Your Success?</h3>
+                <p style="margin-bottom: 25px; color: #495057;">Choose the path that aligns with your goals and start building the skills that will define your professional success.</p>
+                <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                    <button class="cta-button" onclick="showSection('jumpstart')">Quick Impact → Success Accelerators</button>
+                    <button class="cta-button" onclick="showSection('playlists')">Strategic Growth → Learning Paths</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p class="footer-message">Starting a new role is both exciting and naturally comes with questions—that's the sign of someone who cares about doing well. These resources are here to help you turn curiosity into capability and questions into confident expertise.</p>
+            <p class="footer-tagline">Your success journey is unique. We're here to support it.</p>
+            <p style="margin-top: 20px; font-style: italic; color: #6c757d;">Every expert was once a beginner who kept learning.</p>
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all content sections
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Remove active class from all nav tabs
+            document.querySelectorAll('.nav-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Show the selected section
+            const targetSection = document.getElementById(sectionId);
+            if (targetSection) {
+                targetSection.classList.add('active');
+            }
+            
+            // Add active class to the corresponding nav tab
+            const activeTab = document.querySelector(`[onclick="showSection('${sectionId}')"]`);
+            if (activeTab && activeTab.classList.contains('nav-tab')) {
+                activeTab.classList.add('active');
+            }
+            
+            // Scroll to the section smoothly
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+        
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function() {
+            showSection('jumpstart');
+        });
+    </script>
+</body>
+</html>
